@@ -7,7 +7,13 @@
     "default_popup": "popup.html",
     "default_title": "Open Freshworks UTM Builder"
   },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
   "permissions": [
-    "clipboardWrite"
+    "clipboardWrite",
+    "activeTab",
+    "storage"
   ]
 }

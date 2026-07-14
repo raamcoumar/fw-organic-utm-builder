@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campaign Settings</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 30px; max-width: 600px; margin: 0 auto; color: #333; }
+    h2 { color: #1a1a1a; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #f4f5f7; font-size: 14px; }
+    input[type="text"] { width: 100%; padding: 6px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+    .btn-save { background-color: #0052cc; color: white; }
+    .btn-save:hover { background-color: #0043a6; }
+    .btn-add { background-color: #eaecef; color: #333; margin-bottom: 20px; }
+    .btn-delete { background-color: #ff5630; color: white; padding: 6px 10px; font-size: 12px; }
+    #status { color: #00875a; font-weight: bold; display: none; margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Define Campaign UTMs</h2>
+  <p>Add your campaign names and their corresponding UTM tags below.</p>
+  
+  <button id="addBtn" class="btn-add">+ Add New Campaign</button>
+  
+  <table id="campaignTable">
+    <thead>
+      <tr>
+        <th>Name (e.g., Refresh 2026)</th>
+        <th>campaign_utm (e.g., refresh26)</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      </tbody>
+  </table>
+
+  <div>
+    <button id="saveBtn" class="btn-save">Save Settings</button>
+    <span id="status">Settings saved!</span>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
